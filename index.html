@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RailMadad Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-left">
+            <img src="g20.jpg" alt="G20 Logo" class="g20-logo">
+            <div class="title-section">
+                <h1>RailMadad</h1>
+                <p>For Inquiry, Assistance & Grievance Redressal</p>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="emergency">
+                <span class="emergency-number">139</span>
+                <p>for Security/Medical Assistance</p>
+            </div>
+            <div class="login-signup">
+                <button class="login-btn">Log In</button>
+                <button class="signup-btn">Sign Up</button>
+                <select class="language-select">
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                </select>
+                <button class="voice-assist"><img src="call.jpg" alt="Voice Assist"></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section class="main-container">
+            <!-- Service Icons -->
+            <section class="services">
+                <div class="icon-box">
+                    <img src="tb.png" alt="Ticket Booking">
+                    <p>Ticket Booking</p>
+                </div>
+                <div class="icon-box">
+                    <img src="te.png" alt="Train Enquiry">
+                    <p>Train Enquiry</p>
+                </div>
+                <div class="icon-box">
+                    <img src="re.png" alt="Reservation Enquiry">
+                    <p>Reservation Enquiry</p>
+                </div>
+                <div class="icon-box">
+                    <img src="rr.png" alt="Retiring Room">
+                    <p>Retiring Room Booking</p>
+                </div>
+                <div class="icon-box">
+                    <img src="ir.png" alt="Indian Railways">
+                    <p>Indian Railways</p>
+                </div>
+                <div class="icon-box">
+                    <img src="utst.png" alt="UTS Ticketing">
+                    <p>UTS Ticketing</p>
+                </div>
+                <div class="icon-box">
+                    <img src="fb.png" alt="Freight Business">
+                    <p>Freight Business</p>
+                </div>
+                <div class="icon-box">
+                    <img src="rpw.png" alt="Railway Parcel Website">
+                    <p>Railway Parcel Website</p>
+                </div>
+            </section>
+
+            <!-- Sidebar & Dynamic Form Sections -->
+            <section class="form-container">
+                <div class="sidebar">
+                    <ul>
+                        <li class="tab-button" data-form="trainForm">Train</li>
+                        <li class="tab-button" data-form="stationForm">Station</li>
+                        <li class="tab-button" data-form="appreciationForm">Appreciation</li>
+                        <li class="tab-button" data-form="inquiryForm">Inquiry</li>
+                        <li class="tab-button" data-form="referenceForm">Reference No.</li>
+                        <li class="tab-button" data-form="suggestionForm">Suggestion</li>
+                    </ul>
+                </div>
+
+                <div class="form-sections">
+                    <!-- Train Form -->
+                    <div id="trainForm" class="form-section">
+                        <h2>Grievance Detail</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="mobile">Mobile No.</label>
+                                <input type="text" id="mobile" name="mobile" placeholder="Enter Mobile No.">
+                                <button type="button" class="otp-btn">Get OTP</button>
+                            </div>
+                            <div class="form-group">
+                                <label for="pnr">PNR No.</label>
+                                <input type="text" id="pnr" name="pnr" placeholder="Enter PNR No.">
+                            </div>
+                            <div class="form-group">
+                                <label for="type">Type</label>
+                                <select id="type" name="type">
+                                    <option value="">-- Select --</option>
+                                    <option value="type1">Type 1</option>
+                                    <option value="type2">Type 2</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="subtype">Sub Type</label>
+                                <select id="subtype" name="subtype">
+                                    <option value="">-- Select --</option>
+                                    <option value="subtype1">Sub Type 1</option>
+                                    <option value="subtype2">Sub Type 2</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="incident-date">Incident Date</label>
+                                <input type="datetime-local" id="incident-date" name="incident-date">
+                            </div>
+                            <div class="form-group">
+                                <label for="upload">Upload File</label>
+                                <input type="file" id="upload" name="upload">
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Grievance Description</label>
+                                <textarea id="description" name="description" rows="4"></textarea>
+                            </div>
+                            <div class="form-btn-group">
+                                <button type="submit" class="submit-btn">Submit</button>
+                                <button type="reset" class="reset-btn">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Station Form -->
+                    <div id="stationForm" class="form-section">
+                        <h2>Grievance Detail</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="station-type">Type</label>
+                                <select id="station-type" name="type">
+                                    <option value="">-- Select --</option>
+                                    <option value="type1">Type 1</option>
+                                    <option value="type2">Type 2</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="station-subtype">Sub Type</label>
+                                <input type="text" id="station-subtype" name="subtype">
+                            </div>
+                            <div class="form-group">
+                                <label for="station-incident-date">Incident Date</label>
+                                <input type="datetime-local" id="station-incident-date" name="incident-date">
+                            </div>
+                            <div class="form-group">
+                                <label for="station-upload">Upload File</label>
+                                <input type="file" id="station-upload" name="upload">
+                            </div>
+                            <div class="form-group">
+                                <label for="station-mobile">Mobile No.</label>
+                                <input type="text" id="station-mobile" name="mobile">
+                                <button type="button" class="otp-btn">Get OTP</button>
+                            </div>
+                            <div class="form-btn-group">
+                                <button type="submit" class="submit-btn">Submit</button>
+                                <button type="reset" class="reset-btn">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Add other forms (appreciationForm, inquiryForm, referenceForm, suggestionForm) similarly -->
+                </div>
+            </section>
+        </section>
+
+        <!-- Chatbot Icon -->
+        <div class="chatbot">
+            <button id="chatbot-btn">
+                <img src="robot.png" alt="Chatbot" id="chatbot-icon">
+            </button>
+        </div>
+
+        <!-- Chatbot Modal -->
+        <div id="chatbot-modal" class="chatbot-modal">
+            <div class="chatbot-header">
+                <span id="close-chatbot" class="close-btn">&times;</span>
+                <h2>Chat with Us</h2>
+            </div>
+            <div class="chatbot-body">
+                <div class="chatbot-messages">
+                    <div class="message">Hello! What's your query?</div>
+                </div>
+                <textarea id="chatbot-input" placeholder="Type your message here..."></textarea>
+                <button id="chatbot-send">Send</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 RailMadad. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Handle tab button clicks to show/hide forms
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const formSections = document.querySelectorAll('.form-section');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Hide all forms
+                    formSections.forEach(section => {
+                        section.classList.remove('active');
+                    });
+
+                    // Show the selected form
+                    const formId = button.getAttribute('data-form');
+                    const selectedForm = document.getElementById(formId);
+                    selectedForm.classList.add('active');
+                });
+            });
+
+            // Optionally, show the first form by default
+            if (formSections.length > 0) {
+                formSections[0].classList.add('active');
+            }
+
+            // Chatbot functionality
+            const chatbotBtn = document.getElementById('chatbot-btn');
+            const chatbotModal = document.getElementById('chatbot-modal');
+            const closeBtn = document.getElementById('close-chatbot');
+            const chatbotSend = document.getElementById('chatbot-send');
+            const chatbotInput = document.getElementById('chatbot-input');
+            const chatbotMessages = document.querySelector('.chatbot-messages');
+
+            chatbotBtn.addEventListener('click', () => {
+                chatbotModal.style.display = 'block';
+            });
+
+            closeBtn.addEventListener('click', () => {
+                chatbotModal.style.display = 'none';
+            });
+
+            window.addEventListener('click', (event) => {
+                if (event.target === chatbotModal) {
+                    chatbotModal.style.display = 'none';
+                }
+            });
+
+            chatbotSend.addEventListener('click', () => {
+                const message = chatbotInput.value.trim();
+                if (message) {
+                    const messageDiv = document.createElement('div');
+                    messageDiv.classList.add('message');
+                    messageDiv.textContent = message;
+                    chatbotMessages.appendChild(messageDiv);
+                    chatbotInput.value = '';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

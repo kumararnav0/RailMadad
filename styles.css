@@ -1,0 +1,316 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f3;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #003366;
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.g20-logo {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.title-section h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.title-section p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.emergency {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.emergency-number {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+button {
+    padding: 12px 18px;
+    margin-left: 15px;
+    font-size: 1.1em;
+    background-color: #00509e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.language-select {
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.voice-assist img {
+    width: 50px;
+    cursor: pointer;
+}
+
+/* Main Section Container */
+.main-container {
+    display: grid;
+    grid-template-columns: 3fr 1.2fr;
+    gap: 25px;
+    padding: 30px 60px;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #f2f2f2;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box {
+    text-align: center;
+    flex-basis: 22%;
+    margin-bottom: 25px;
+}
+
+.icon-box img {
+    width: 90px;
+    height: 90px;
+}
+
+.icon-box p {
+    margin-top: 12px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Sidebar & Grievance Form */
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 25px;
+}
+
+.sidebar {
+    background-color: #004d40;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 30px 0;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.sidebar ul li:hover {
+    color: #ffcc00;
+}
+
+.grievance-form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.grievance-form h2 {
+    color: #800040;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    flex: 1;
+    font-size: 1.1em;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    flex: 3;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.otp-btn {
+    margin-left: 15px;
+    background-color: #800040;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1.1em;
+}
+
+.form-btn-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.submit-btn, .reset-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #800040;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.submit-btn:hover, .reset-btn:hover {
+    background-color: #660033;
+}
+
+/* Chatbot Section */
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#chatbot-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Chatbot Modal */
+.chatbot-modal {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 300px;
+    max-height: 400px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chatbot-header {
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-title {
+    font-size: 16px;
+}
+
+.close-button {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.chatbot-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chatbot-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.message.user {
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+textarea#chatbot-input {
+    border: none;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#chatbot-send {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    display: none;
+}
+
+.form-section.active {
+    display: block;
+}
